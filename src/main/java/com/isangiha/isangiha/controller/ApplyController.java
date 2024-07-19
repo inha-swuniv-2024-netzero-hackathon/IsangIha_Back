@@ -9,7 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/applications")
+@RequestMapping("/api/applications")
 @RequiredArgsConstructor
 @Slf4j
 public class ApplyController {
@@ -22,11 +22,9 @@ public class ApplyController {
     }
 
     @PostMapping
-    @ResponseBody
-    public Event apply(@RequestBody Event event) {
-
+    @ResponseStatus(HttpStatus.OK)
+    public void apply(@RequestBody Event event) {
         applyService.save(event);
-        return event;
     }
 
 //    @PostMapping
