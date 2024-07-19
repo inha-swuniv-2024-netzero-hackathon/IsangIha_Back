@@ -1,49 +1,47 @@
 package com.isangiha.isangiha.domain;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Entity
-@Table(name = "application")
-public class Application {
+@Data
+@NoArgsConstructor
+@Table(name = "event")
+public class Event {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long applicationId;
+    private Long eventId;
 
-    @NotNull
     private String enterpriseName;
 
-    @NotNull
     private String eventName;
 
-    @NotNull
     private Integer headcount;
 
-    @ManyToOne
-    @NotNull
-    private Container container;
-
-    @NotNull
     private String startDate;
 
-    @NotNull
     private String endDate;
 
-    @NotNull
     private String deliveryDate;
 
-    @NotNull
     private String collectionDate;
 
-    @NotNull
     private String location;
 
-    private String cluster;
+    private Integer cluster;
 
-    @NotNull
     private Boolean meeting;
 
     private String meetingDate;
+
+    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Coordinate> coordinates;
+
+    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Container> containers;
 
 }
