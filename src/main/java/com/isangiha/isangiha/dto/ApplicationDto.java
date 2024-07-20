@@ -30,4 +30,6 @@ public class ApplicationDto {
     private String meetingDate;
 
     private List<ContainerDto> containers;
+
+    private List<CoordinateDto> coordinates;
 }

@@ -3,6 +3,8 @@ package com.isangiha.isangiha.service;
 import com.isangiha.isangiha.domain.Coordinate;
 import com.isangiha.isangiha.domain.Event;
 import com.isangiha.isangiha.domain.Container;
+import com.isangiha.isangiha.dto.ApplicationDto;
+import com.isangiha.isangiha.dto.ContainerDto;
 import com.isangiha.isangiha.repository.CoordinateRepository;
 import com.isangiha.isangiha.repository.EventRepository;
 import com.isangiha.isangiha.repository.ContainerRepository;
@@ -22,8 +24,7 @@ public class ApplyService {
     private final CoordinateRepository coordinateRepository;
 
     @Transactional
-    public void save(Event application) {
-        Event app = eventRepository.save(application);
+    public void save(ApplicationDto applicationDto) {
 
         //make mock coordinates data
         List<Coordinate> tempList = new ArrayList<>();
