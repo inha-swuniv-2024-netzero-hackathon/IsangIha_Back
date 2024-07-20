@@ -1,0 +1,144 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header .search-bar input {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .chart-container, .statistics, .infographic, .overview {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-container {
+    flex: 1 1 300px;
+  }
+  
+  .chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .legend span {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+  }
+  
+  .legend .eu {
+    background: #4CAF50;
+  }
+  
+  .legend .usd {
+    background: #8BC34A;
+  }
+  
+  .statistics, .infographic, .overview {
+    flex: 1 1 200px;
+  }
+  
+  .pie-chart, .progress-circle {
+    height: 250px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progress-circle h3 {
+    margin: 0;
+    position: absolute;
+  }
+  
+  .area-chart, .line-chart {
+    height: 400px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .area-chart .area {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    opacity: 0.6;
+  }
+  
+  .line-chart .line {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0.6;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-title {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .card-content {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 0.2s;
+  }
+
+  .warning-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* 아이콘 간격 조정 */
+  }
+  
+  .circle {
+    width: 20px;   /* 아이콘 크기 */
+    height: 20px;  /* 아이콘 크기 */
+    border-radius: 50%;
+  }

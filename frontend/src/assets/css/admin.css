@@ -1,0 +1,186 @@
+.full-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+.center-sender {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical-direction-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.direction-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.direction-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 100px);
+}
+
+.header-wrapper {
+  width: 100%;
+  height: 100px;
+  padding: 30px;
+  background-color: #00a86b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: large;
+  color: #fff;
+}
+
+.admin-content {
+  width: calc(100vw - 250px);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f5f5f5;
+  overflow-y: auto;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-menu,
+.sidebar-projects,
+.sidebar-personal,
+.sidebar-learning {
+  margin-bottom: 20px;
+}
+
+.menu-item,
+.project-item {
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu-item:hover,
+.project-item:hover {
+  background-color: #e0e0e0;
+}
+
+.section-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #6c757d;
+}
+
+.input-form {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.input-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.input-form label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.input-form input,
+.input-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-form button {
+  background-color: #00a86b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-form button:hover {
+  background-color: #007bff;
+}
+
+.input-form input[type=“checkbox”] {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+
+.container-row {
+  gap: 10px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-row {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.map-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.date-picker {
+  margin-left: 30px;
+}
+
+.coordinate-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
